@@ -3,6 +3,12 @@
       TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
       
 
+AddEventHandler('onResourceStart', function(resource)
+	if resource == GetCurrentResourceName() then
+		Citizen.Wait(5000)
+		print('[^1aiden:masturbation^0] - ^1Started^0')
+	end
+end)
       
       RegisterServerEvent('aiden-31:pecetever')
       AddEventHandler('aiden-31:pecetever', function()
